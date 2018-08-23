@@ -98,12 +98,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{33B7
 		edge-modules\functions\samples\host.json = edge-modules\functions\samples\host.json
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EdgeHubTrigger-CSX", "EdgeHubTrigger-CSX", "{AFA4A92F-62AA-4EA9-9AE2-70E7EC5FCB12}"
-	ProjectSection(SolutionItems) = preProject
-		edge-modules\functions\samples\EdgeHubTrigger-Csx\function.json = edge-modules\functions\samples\EdgeHubTrigger-Csx\function.json
-		edge-modules\functions\samples\EdgeHubTrigger-Csx\run.csx = edge-modules\functions\samples\EdgeHubTrigger-Csx\run.csx
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.Devices.Edge.Storage", "edge-util\src\Microsoft.Azure.Devices.Edge.Storage\Microsoft.Azure.Devices.Edge.Storage.csproj", "{DB92F6C3-A611-40C5-B464-8F11A3EE1AC3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Azure.Devices.Edge.Storage.RocksDb", "edge-util\src\Microsoft.Azure.Devices.Edge.Storage.RocksDb\Microsoft.Azure.Devices.Edge.Storage.RocksDb.csproj", "{D6BFCE1F-0F53-43F1-8D2B-FC0FF8EEFA9C}"
@@ -117,11 +111,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{64E95D7B-8541-4A88-A291-8BE3445FB8FF}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{80688705-AEFD-4297-907E-2B20DAFBB5D5}"
-	ProjectSection(SolutionItems) = preProject
-		edge-modules\functions\samples\bin\extensions.json = edge-modules\functions\samples\bin\extensions.json
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linux", "linux", "{BCAA863C-8BC2-4FB1-9D9E-7BCADBCFC3A5}"
 EndProject
@@ -457,12 +446,10 @@ Global
 		{1ABF19EE-7689-4EE3-A099-16111A8F16F4} = {B8B03013-8D6E-4D4E-9914-33D55074DEC8}
 		{B8B03013-8D6E-4D4E-9914-33D55074DEC8} = {C4502187-81D7-4299-85C3-64AE241503E0}
 		{33B7755E-D6F9-4F9B-86A8-5DFE9FEE674E} = {C4502187-81D7-4299-85C3-64AE241503E0}
-		{AFA4A92F-62AA-4EA9-9AE2-70E7EC5FCB12} = {33B7755E-D6F9-4F9B-86A8-5DFE9FEE674E}
 		{DB92F6C3-A611-40C5-B464-8F11A3EE1AC3} = {66964A75-04AC-4FDE-8505-E6CB2EF90BE8}
 		{D6BFCE1F-0F53-43F1-8D2B-FC0FF8EEFA9C} = {66964A75-04AC-4FDE-8505-E6CB2EF90BE8}
 		{3EB5B58A-5820-44E7-9558-917C105B940D} = {373FFF5E-E84C-4789-B768-676FFF51E7A6}
 		{64E95D7B-8541-4A88-A291-8BE3445FB8FF} = {33B7755E-D6F9-4F9B-86A8-5DFE9FEE674E}
-		{80688705-AEFD-4297-907E-2B20DAFBB5D5} = {33B7755E-D6F9-4F9B-86A8-5DFE9FEE674E}
 		{BCAA863C-8BC2-4FB1-9D9E-7BCADBCFC3A5} = {64E95D7B-8541-4A88-A291-8BE3445FB8FF}
 		{B5BB5CDE-E6C7-4896-A66E-17D81BDB9A31} = {BCAA863C-8BC2-4FB1-9D9E-7BCADBCFC3A5}
 		{31B0F93F-3E58-4C66-9DCC-24236EA81F16} = {BCAA863C-8BC2-4FB1-9D9E-7BCADBCFC3A5}
