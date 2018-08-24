@@ -182,6 +182,13 @@ publish_quickstart()
         .
 }
 
+publish_functions_sample()
+{
+    echo "Publishing Functions sample"
+    publish_files $FUNCTIONS_SAMPLE_DIR $PUBLISH_FOLDER
+
+    publish_project app "EdgeHubTriggerCSharp" $DOTNET_RUNTIME $CONFIGURATION "$PUBLISH_FOLDER/samples/EdgeHubTrigger-Csharp/bin" $MSBUILD_OPTIONS
+}
 
 process_args "$@"
 
@@ -203,7 +210,6 @@ publish_files $SRC_SCRIPTS_DIR $PUBLISH_FOLDER
 publish_files $SRC_BIN_DIR $PUBLISH_FOLDER
 publish_files $SRC_STRESS_DIR $PUBLISH_FOLDER
 publish_files $SRC_E2E_TEMPLATES_DIR $PUBLISH_FOLDER
-publish_files $FUNCTIONS_SAMPLE_DIR $PUBLISH_FOLDER
 
 if [ $PUBLISH_TESTS -eq 1 ]; then
     while read proj; do
@@ -216,5 +222,6 @@ fi
 
 publish_quickstart linux-arm
 publish_quickstart linux-x64
+publish_functions_sample
 
 exit $RES
