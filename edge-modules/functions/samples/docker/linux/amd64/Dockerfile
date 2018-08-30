@@ -1,7 +1,5 @@
-FROM microsoft/dotnet:2.1-aspnetcore-runtime
+FROM mcr.microsoft.com/azure-functions/dotnet:dev
+
+ENV AzureWebJobsScriptRoot=/app
 
 COPY . /app
-
-CMD ["dotnet", "/app/EdgeHubTrigger-Csharp/bin/EdgeHubTriggerCSharp.dll"]
-
-
